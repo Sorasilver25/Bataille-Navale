@@ -1,0 +1,511 @@
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5vh;
+	background-color: aquamarine;
+}
+
+header > span {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+main {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: aquamarine;
+}
+
+#t1Bateau {
+	width: 26vw;
+	height: 25vw;
+	z-index: 2;
+}
+
+#t2Bateau {
+	width: 26vw;
+	height: 25vw;
+	left: 6%;
+  	position: relative;
+}
+
+#t3Bateau {
+	width: 26vw;
+	height: 25vw;
+	display: none;
+}
+
+#t4Bateau {
+	width: 26vw;
+	height: 25vw;
+	display: none;
+	left: 6%;
+  	position: relative;
+}
+
+.triBateau {
+	display: grid;
+	width: 30%;
+	height: 80%;
+	position: relative;
+	left: 10%;
+	top: 15%;
+}
+
+.triBateau2 {
+	display: none;
+	width: 30%;
+	height: 80%;
+	position: relative;
+	left: 10%;
+	top: 15%;
+}
+
+.\31 ereRangee {
+	display: inline-flex;
+	height: 100%;
+	width: 100%;
+}
+
+.\31 ereRangee2 {
+	display: inline-flex;
+	height: 100%;
+	width: 100%;
+}
+
+.\32 emeRangee {
+	display: inline-flex;
+	height: 100%;
+	width: 100%;
+}
+
+.\32 emeRangee2 {
+	display: inline-flex;
+	height: 100%;
+	width: 100%;
+}
+
+#b1,#b2,#b3,#b4,#b5,#b6,#b7{
+	margin-right: 10%;
+	height: fit-content;
+}
+
+#c1,#c2,#c3,#c4,#c5,#c6,#c7{
+	margin-right: 10%;
+	height: fit-content;
+}
+
+h4 {
+	font-size: 2em;
+	width: 100%;
+	left: -24px;
+	position:relative;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.NomGrille {
+	display: flex;
+	height: 8%;
+	width: 60%;
+	position: relative;
+	left: 12%;
+}
+
+@keyframes blink {
+	0%, 100% {
+	  opacity: 1;
+   }
+	50% {
+	  opacity: 0.5;
+   }
+}
+
+.blink {
+	animation: blink 2s infinite;
+}
+
+
+#rmBateau{
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ff3000;
+	position: absolute;
+	left : 55px;
+	bottom: 35px;
+	font-weight: bold;
+	border-radius: 20px;
+	z-index: 5;
+}
+
+#rmBateau:hover {
+	box-shadow: #ff3000 10px 1px 1px 0px;
+	padding-left: 10px;
+	background: none;
+	border: 3px #ff3000 solid;
+	color: #ff3000;
+	}
+
+.ligne {
+	display: flex;
+	border: solid;
+	width: fit-content;
+	background-color: transparent;
+}
+
+.cellule, .cellule2 {
+	width: 2vw;
+	height: 2vw;
+	border : solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cellule:hover {
+	background-color: blueviolet;
+}
+
+.cellule2:hover {
+	background-color:crimson;
+}
+
+#infoBateau{
+	font-weight: bold;
+	font-size: 21px;
+	text-align: center;
+	background-color: aquamarine;
+	margin-top: 2vw;
+	padding: 5px;
+}
+
+.infoSup {
+	font-weight: bolder;
+  	color: blue;
+}
+
+#bateauETtableau{
+	width : 88vw;
+	height: 100vw;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+}
+
+.b1,.b2,.b3,.b4,.b5,.b6,.b7,.c1,.c2,.c3,.c4,.c5,.c6,.c7 {
+	border: solid;
+	height: 2vw;
+	width: 2vw;
+}
+
+#b1:hover .b1,#b2:hover .b2,#b3:hover .b3,#b4:hover .b4,#b5:hover .b5,#b6:hover .b6,#b7:hover .b7 {
+	position: relative;
+	left: 5px;
+}
+
+#c1:hover .c1,#c2:hover .c2,#c3:hover .c3,#c4:hover .c4,#c5:hover .c5,#c6:hover .c6,#c7:hover .c7 {
+	position: relative;
+	left: 5px;
+}
+
+#b1, #c1{
+	background-color: rgb(186, 214, 241);
+	width: 2vw;
+	height: 5*2%;
+}
+
+.cellule.celluleFantome, .cellule2.celluleFantome2 {
+	z-index: 2;
+	width: 2vw;
+	height: 2vw;
+	opacity:0.5;
+}
+
+.selectionner {
+	border: red solid;
+}
+
+.b1place, .c1place{
+	background-color: rgba(186, 214, 241, 0.6);
+}
+
+#b2, #c2{
+	background-color: rgb(243, 178, 204);
+	width: 2vw;
+	height: 4*2%;
+}
+
+.b2place, .c2place{
+	background-color: rgba(243, 178, 204, 0.6);
+}
+
+#b3, #c3{
+	background-color: rgb(240, 213, 185);
+	width: 2vw;
+	height: 5*3%;
+}
+
+.b3place, .c3place{
+	background-color: rgba(240, 213, 185, 0.6);
+}
+
+#b4, #c4{
+	background-color: rgb(195, 213, 168);
+	width: 2vw;
+	height: 5*4%;
+}
+
+.b4place, .c4place{
+	background-color: rgba(195, 213, 168, 0.6);
+}
+
+#b5, #c5{
+	background-color: rgb(168, 178, 213);
+	width: 2vw;
+	height: 5*4%;
+}
+
+.b5place, .c5place{
+	background-color: rgba(168, 178, 213, 0.6);
+}
+
+#b6, #c6{
+	background-color: rgb(232, 93, 93);
+	width: 2vw;
+	height: 5*4%;
+}
+
+.b6place, .c6place {
+	background-color: rgba(232, 93, 93, 0.6);
+}
+
+#b7, #c7{
+	background-color: rgb(52, 51, 51);
+	width: 2vw;
+	height: 5*4%;
+}
+
+.b7place, .c7place {
+	background-color: rgba(52, 51, 51, 0.6);
+}
+
+
+#switch {
+	width: 80px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 55px;
+	bottom: 35px;
+	z-index: 1;
+	background-color: deeppink;
+	border-radius: 50%;
+}
+
+#switch:hover {
+	box-shadow: deeppink 10px 1px 1px 0px;
+	padding-left: 10px;
+	background: none;
+	border: 3px deeppink solid;
+}
+
+#switchImg{
+	width: 80px;
+	height: 60px;
+}
+
+#CoupSpecial {
+	width: 66px;
+	height: 66px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 64px;
+	bottom: 125px;
+	z-index: 1;
+	background-color: gold;
+	border-radius: 50%;
+	float: right;
+	color: black;
+	font-weight: bold;
+	padding-bottom: 5px;
+	visibility: hidden;
+}
+
+#CoupSpecial:hover {
+	box-shadow: gold 10px 1px 1px 0px;
+	padding-bottom: 10px;
+	border: 3px orange solid;
+}
+
+
+  
+#ModalCoupSpecial {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+  
+#confirmButton {
+	width: 20%;
+	font-size: large;
+	color: green;
+}
+  
+#cancelButton {
+	width: 20%;
+	font-size: large;
+	color: red;
+}
+  
+.modal-content {
+	outline: 2px solid black;
+	padding-top: 0%;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	height: fit-content;
+	background: #e88a8a;
+	width: 20%;
+	z-index: 10;
+	text-align: center;
+}
+
+.BlocSSmarin {
+	color:red;
+}
+
+.cache {
+	visibility: hidden !important;
+}
+
+#boite_victoire{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 95vh;
+	width: 99vw;
+	z-index: -1;
+}
+
+#affichage_victoire{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid;
+	height: 30%;
+	width: 60%;
+	background-color: blanchedalmond;
+	z-index: 2;
+}
+
+.confetti{
+	position: fixed;
+	left: 0;
+	top:0;
+	width: 100vw;
+	height: 100vh;
+	visibility: hidden;
+}
+
+/* Fond animé */
+body {
+	background: aquamarine;
+}
+
+.grille {
+  animation: scroll 70s linear infinite;
+  background: url("https://images.unsplash.com/photo-1510261729814-8ced5ae7c40d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"), #111111;
+}
+
+.grille2 {
+	animation: scroll 70s linear infinite;
+	background : url(https://img.freepik.com/photos-gratuite/flou-abstrait-studio-degrade-vert-vide-bien-utiliser-comme-arriere-planmodele-site-webcadrerapport-activite_1258-52607.jpg), #111111;
+}
+
+.inverseGrille {
+	animation: scroll 70s linear infinite !important;
+	background : url(https://img.freepik.com/photos-gratuite/flou-abstrait-studio-degrade-vert-vide-bien-utiliser-comme-arriere-planmodele-site-webcadrerapport-activite_1258-52607.jpg), #111111;
+}
+
+.inverseGrille2 {
+	animation: scroll 70s linear infinite !important;
+	background: url("https://images.unsplash.com/photo-1510261729814-8ced5ae7c40d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"), #111111;
+}
+
+.BateauCouler 
+{
+	content: url(../img/Boom.png);
+
+}
+
+.BateauRaté {
+	content: url(../img/rate.png);
+}
+
+#CoupSpecial.Desactiver {
+	background-color: rgba(125, 117, 117, 0.7);
+	color: rgb(51, 50, 50);
+}
+
+#CoupSpecial.Desactiver:hover {
+	box-shadow: rgba(125, 117, 117, 0.7) 10px 1px 1px 0px;
+	border: 3px rgb(51, 50, 50) solid;
+}
+
+@keyframes scroll {
+   100%{
+    background-position:0px 3000px;
+  }
+}
+
+#conf1{
+	animation: scroll 30s linear infinite;
+	background: url("https://www.pngmart.com/files/5/Confetti-PNG-Photos.png"), #111111;
+	background-color: rgba(0, 0, 0, 0);
+	min-width: 360px;
+	visibility: hidden;
+	z-index: 1;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+}
+
+#conf2{
+	animation: scroll 20s linear infinite;
+	background: url("https://www.pngmart.com/files/5/Confetti-PNG-Photos.png"), #111111;
+	background-color: rgba(0, 0, 0, 0);
+	min-width: 360px;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	z-index: 3;
+}
+
