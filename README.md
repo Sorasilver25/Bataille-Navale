@@ -1,2 +1,4 @@
 # Bataille-Navale
-Jouer a la bataille navale en 1 contre 1 sur le même écran le jeu se déroule en 3 étapes, le joueur 1 place tout ces bateaux, il appuie sur le bouton changement de joueur et c'est au 2 eme joueur de positionner ces bateaux, une fois cela fait le jeu peut commencer. Chaque joueur peut lancer un coup spécial une fois.
+Jouer a la bataille navale en 1 contre 1 sur le même écran le jeu se déroule en 3 étapes, le joueur 1 place tout ces bateaux, il appuie sur le bouton changement de joueur et c'est au 2 eme joueur de positionner ces bateaux, une fois cela fait le jeu peut commencer. Chaque joueur peut lancer un coup spécial une seule fois.
+
+Le coup spécial, il envoie depuis une case aléatoire du bateau noir ( sous marin) une torpille sur la case toucher par le joueur, cette torpille va traverser la zone balayer entre sa position de depart et la case ou l'on tire. Toutes les cases par lesquelles la torpille passent sont révélés, en contrepartie le joueur révèle une case de son sous marin a l'ennemie. Tout les bateaux coule en 1 coup si ils sont touchés sauf le sous marin qui est coulé en 3 coups.
